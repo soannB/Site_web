@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="author"content="Tanweer & Soann">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+    </head>
+    <body>
+        <h1 class="Sous_parties_h1">Les variables</h1>
+        <p><u>Définition</u> : Une variable est un objet symbolisé par un nom auquel on associe une valeur.</p>
+        <h2 class="Sous_parties_h2">1. Types de base</h2>
+        <div>
+            <p>En Python, Il existe 4 types de base :</p>
+            <ul>
+                <li>
+                    <p>Le type int (integer), qui définit un nombre entier</p> 
+                </li>
+                <li>
+                    <p>Le type float (flottant), qui définit les flottants (nombre à virgule)</p> 
+                </li>
+                <li>
+                    <p>Le type str (string), qui définit les chaines de caractères</p> 
+                </li>
+                <li>
+                    <p>Le type bool (booléens), qui définit un booléen</p> 
+                </li>
+            </ul>
+        </div>
+        <h2 class="Sous_parties_h2">2. Affectation d'une valeur à une variable</h2>
+            <div>
+                <p>Afin d'utiliser une variable, il faut toujours l'initialiser avec une valeur.
+                    On appelle cela une <u>affectation</u>.
+                    Voici comment affecter unne valeur à une variable :</p>
+            </div>
+            <div class="Exemple_de_code">
+                <p class="ligne_de_code_python"><br>variable = 3 <p class="commentaire_python">&nbsp #Pour un integer</p></p>
+                <p class="ligne_de_code_python"><br>variable = 3.5 <p class="commentaire_python">&nbsp #Pour un float</p></p>
+                <p class="ligne_de_code_python"><br>variable = "Coucou" <p class="commentaire_python">&nbsp #Pour une chaine de caractères</p></p>
+                <p class="ligne_de_code_python"><br>variable = True <p class="commentaire_python">&nbsp #Pour un booléen</p></p>
+                <p><br></p>
+            </div>
+            <div>
+                <p> Ainsi, nous avons le nom de la variable, un "=" (symbole d'affectation) et la valeur que l'on souhaite lui associer.</p>
+            </div>
+        <h2 class="Sous_parties_h2">3. Manipulation des chaînes de caractères</h2>
+            <p>Une chaîne de caractères, lors de son affectation à une variable, est toujours entourée par des guillemets simples ou doubles afin
+                d'éviter au langage de la confondre avec une autre variable. Ainsi, si l'on écrit ...</p>
+            <div class="Exemple_de_code">
+                <p class="ligne_de_code_python"><br>variable = autre_variable</p>  
+                <p><br></p>           
+            </div>
+            <p>...la variable nommée "variable" prendra la valeur du <u>contenu</u> de la variable "autre_variable".</p>
+            <p>Reconcentrons-nous sur les chaînes de caractères.</p>
+            <p>Il est possible d'assembler deux chaines de caractères ensemble. Ce faisant, on réalise une <u>concaténation</u>.
+                Voici comment réaliser une concaténation :</p>
+            <div class="Exemple_de_code">
+                <p class="ligne_de_code_python"><br>variable = "a"+"b"<p class="commentaire_python">&nbsp #La variable contiendra "ab"</p></p>  
+                <p><br></p>           
+            </div>
+            <p>Il est tout à fait possible de réaliser une concaténation avec deux variables (à condition qu'elles soient de type str) :</p>
+            <div class="Exemple_de_code">
+                <p class="ligne_de_code_python"><br>variable = var1 + var2</p>  
+                <p><br></p>           
+            </div>
+            <p>Afin d'afficher des messages, des valeurs ou des contenus de variable, on peut utiliser la fonction print().
+                Attention cependant, cette fonction ne permet <u>que</u> de l'affichage.
+            </p>
+            <div class="Exemple_de_code">
+                <p class="ligne_de_code_python"><br>var1 = "Coucou"<p class="commentaire_python">&nbsp</p></p>
+                <p class="ligne_de_code_python"><br>var2 = "l'ekip"<p class="commentaire_python">&nbsp</p></p>
+                <p class="ligne_de_code_python"><br>variable = var1 + var2<p class="commentaire_python">&nbsp</p></p>
+                <p class="ligne_de_code_python"><br>>>> print(variable)<p class="commentaire_python">&nbsp</p></p>   
+                <p class="ligne_de_code_python"><br>>>> Coucou l'ekip<p class="commentaire_python">&nbsp #Les ">>>" correspondent à l'utilisation de Python en mode interactif</p></p> 
+                <p><br></p>
+            </div>
+
+
+            <h1 class="Sous_parties_h1">Exercices</h1>
+            <div>
+                <p>Pour chaque proposition, donner le type de la varible.</p>
+                <form id="form_type_1">
+                    <p id="Questions_exercices">Quel est le type de la variable a (a=3) ?</p>
+                    <p><input type="radio" name="form1" class="boutons_radio" id="Bonne_reponse"> Integer</p>
+                    <p><input type="radio" name="form1" class="boutons_radio"> Boolean</p>
+                    <p><input type="radio" name="form1" class="boutons_radio"> String</p>
+                    <p><input type="radio" name="form1" class="boutons_radio"> Float</p>
+                    <button type="button" onclick="afficher_correction_variables_form_type_1();" id="bouton_correction" class="bouton_correction">Correction</button>
+                </form>
+
+                <form id="form_type_2">
+                    <p id="Questions_exercices">Quel est le type de la variable b (b=True) ?</p>
+                    <p><input type="radio" name="form2" class="boutons_radio"> Integer</p>
+                    <p><input type="radio" name="form2" class="boutons_radio" id="Bonne_reponse2"> Boolean</p>
+                    <p><input type="radio" name="form2" class="boutons_radio"> String</p>
+                    <p><input type="radio" name="form2" class="boutons_radio"> Float</p>
+                    <button type="button" onclick="afficher_correction_variables_form_type_2();" id="bouton_correction_2" class="bouton_correction">Correction</button>
+                </form>
+
+                <form id="form_type_3">
+                    <p id="Questions_exercices">Quel est le type de la variable c (c=3.5) ?</p>
+                    <p><input type="radio" name="form3" class="boutons_radio"> Integer</p>
+                    <p><input type="radio" name="form3" class="boutons_radio"> Boolean</p>
+                    <p><input type="radio" name="form3" class="boutons_radio"> String</p>
+                    <p><input type="radio" name="form3" class="boutons_radio" id="Bonne_reponse3"> Float</p>
+                    <button type="button" onclick="afficher_correction_variables_form_type_3();" id="bouton_correction_3" class="bouton_correction">Correction</button>
+                </form>
+            </div>
+            
+            <p>Donner le bon programme à l'utilisation voulue</p>
+            <p>Quel programme affichera "T'choupi et ses amis" ?</p>
+            <p>1.</p>
+            <div class="Exemple_de_code">
+                <p class="ligne_de_code_python"><br>var1 = "T'choupi"<p class="commentaire_python">&nbsp</p></p>
+                <p class="ligne_de_code_python"><br>var2 = "et ses amis"<p class="commentaire_python">&nbsp</p></p>
+                <p class="ligne_de_code_python"><br>variable = "var1" + "var2"<p class="commentaire_python">&nbsp</p></p>
+                <p class="ligne_de_code_python"><br>print(variable)<p class="commentaire_python">&nbsp</p></p>   
+                <p><br></p>
+            </div>
+
+            <p>2.</p>
+            <div class="Exemple_de_code">
+                <p class="ligne_de_code_python"><br>var1 = "T'choupi"<p class="commentaire_python">&nbsp</p></p>
+                <p class="ligne_de_code_python"><br>var2 = "et ses amis"<p class="commentaire_python">&nbsp</p></p>
+                <p class="ligne_de_code_python"><br>variable = var1 + "var2<p class="commentaire_python">&nbsp</p></p>
+                <p class="ligne_de_code_python"><br>print(variable)<p class="commentaire_python">&nbsp</p></p>   
+                <p><br></p>
+            </div>
+
+            <p>3.</p>
+            <div class="Exemple_de_code">
+                <p class="ligne_de_code_python"><br>var1 = "T'choupi"<p class="commentaire_python">&nbsp</p></p>
+                <p class="ligne_de_code_python"><br>var2 = "et ses amis"<p class="commentaire_python">&nbsp</p></p>
+                <p class="ligne_de_code_python"><br>variable = var1 + var2<p class="commentaire_python">&nbsp</p></p>  
+                <p><br></p>
+            </div>
+
+            <form>
+                <select size="1" name="code"></select>
+            </form>
+
+            <div class="Lien_partie_suivante_Variables"><a href="Boucles.html">Partie suivante >></a></div>
+            <div class="Lien_retour_sommaire"><a href="../../Liste_des_chapitres.html">Retour</a></div>
+        <script src="CH-3.js"></script>
+    </body>
+</html>

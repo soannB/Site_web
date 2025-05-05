@@ -1,0 +1,233 @@
+/* Style des éléments généraux*/
+
+a:hover{
+    color:green ;
+}
+
+a{
+    color: rgb(228, 114, 114);
+    font-size: 25px;
+}
+
+p{
+    color:rgb(214, 214, 214);
+    font-size: 25px;
+}
+
+summary{
+    color:rgb(236, 233, 188);
+    font-size: 25px;
+}
+
+body{
+    background-color: #06200f;
+}
+
+.Sous_parties_h1{
+    color: rgb(232, 166, 125);
+    font-size: 40px;
+}
+.Sous_parties_h2{
+    color: rgb(228, 140, 85);
+    font-size: 30px;
+}
+
+
+
+/* Page d'accueil */
+
+#Texte_Intro{
+    width : 75%;
+}
+
+.Logo_Acceuil{
+    height: 390px;
+    width: 284px;
+}
+
+#Lien-bouton_Acceuil{
+    text-decoration: none;
+    color:rgb(242, 224, 182);
+    background-color: #0a3318;
+    display : block;
+    width : 250px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 20px;
+}   
+
+
+
+
+/* Sommaire */
+
+.Contenant_menu_deroulant{
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    margin-left: 25%;
+    width : 50% ;
+    color: bisque;
+    margin-top: 50px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    
+}
+
+.Sous_chapitres{
+    margin-left: 25px;
+}
+
+.Titres_Chapitres{
+    color: rgb(246, 218, 153);
+    
+
+}
+
+#Titre_page_Chapitres{
+    color: rgb(232, 166, 125);
+    display: inline;
+    text-align: center;
+    width: 50%;
+}
+
+.Menu_sous_partie{
+    margin-bottom: 25px;
+}
+
+#Titre_page_liste{
+    font-size: 75px;
+}
+
+#Lien_vers_accueil_de_liste{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align : center;
+}
+
+
+
+
+/* Chapitres */
+
+/* CH-1 : Les variables */
+
+.Exemple_de_code{ /*Réutilisé dans d'autres pages*/
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(0, 0, 48);
+    border-radius: 20px;
+
+}
+.Exemple_de_code p{ /*Réutilisé dans d'autres pages*/
+    font-family: monospace;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+.commentaire_python{ /*Réutilisé dans d'autres pages*/
+    color:green;
+    display:inline-block;
+    margin-bottom: 5px;
+    padding-top: 30px;
+}
+
+.ligne_de_code_python{ /*Réutilisé dans d'autres pages*/
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.Lien_partie_précédente{ /*Réutilisé dans d'autres pages*/
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 25%;
+    text-align : center;
+    display: inline-block;
+    width:25%;
+}
+
+.Lien_partie_suivante_Variables{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-align : center;
+}
+
+.Lien_partie_suivante{ /*Réutilisé dans d'autres pages*/
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-align : center;
+    display: inline-block;
+    width:25%;
+}
+
+.Lien_retour_sommaire{ /*Réutilisé dans d'autres pages*/
+    margin-top: 15px;
+    margin-bottom: 50px;
+    text-align : center;
+}
+
+#Questions_exercices{ /*Réutilisé dans d'autres pages*/
+    font-size: 25px;
+    font-family:monospace;
+}
+
+.boutons_radio{ /*Réutilisé dans d'autres pages*/
+    margin-left : 30px
+}
+
+.bouton_correction{
+    color:white;
+    background-color: black;
+    border-color: black;
+}
+
+
+/* Credits */
+
+#Photo_Tanweer{
+    
+    clip-path:ellipse(40% 50%);
+    width: 15.5%;
+    height: 15.5%;
+    margin-right: 375px;
+}
+
+#Photo_Soann{
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    margin-right: 30px;
+    
+}
+
+#Photos{
+    text-align: center;
+}
+
+#Texte_Tanweer{
+    display: inline-block;
+    text-align: center;
+    width : 30%;
+    margin-left: 12.5%;
+    border : white 5px solid;
+}
+
+#Texte_Soann{
+    display: inline-block;
+    text-align: center;
+    width : 30%;
+    margin-left: 12.5%;
+    border : white 2px solid;
+}
+
+#Lien_vers_accueil_de_nous{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align : center;
+}
+

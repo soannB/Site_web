@@ -1,0 +1,31 @@
+Mise en place du projet : Cours de l'année
+S :- html
+credits mise en page + photo
+Principaux commandes
+texte descriptif d'accuil et des premiers chap.
+
+
+
+
+
+
+
+
+
+
+
+
+T :- css
+page d'accuil logo
+liens des chapitres
+texte deroulant contenu/affichage 
+texte descriptif des chap. 
+credits photo
+Binaire 1 et 2
+
+
+
+
+
+
+ps : On a tout fait en groupe
